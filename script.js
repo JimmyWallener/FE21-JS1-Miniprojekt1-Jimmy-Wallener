@@ -12,6 +12,8 @@ const arrayOfNumbers = [
   "tio",
 ];
 
+// Creating a wrapper and populating it with colored <div> using foreach. Also capsulate text in <p> for better encapsulation.
+
 const div = document.createElement("div");
 body.appendChild(div);
 
@@ -54,6 +56,8 @@ for (let i = 1; i < 6; i++) {
   });
 }
 
+// Second <div> that will contain three centered <ul> boxes.
+
 const div2 = document.createElement("div");
 div.appendChild(div2);
 
@@ -68,6 +72,13 @@ div2.style.cssText = `
 `;
 
 const container = document.querySelector(".list-container");
+
+/* 
+  creating <ul> with nested for-loops for populating <ul> with <li>.
+  first nested for-loop is reversed for the backwards countdown.
+  adding <li> elements for each <ul> with corresponding data and styles.
+  will use className for isolating element instead of [i] for readability.
+*/
 
 for (let i = 0; i < 3; i++) {
   const ul = document.createElement("ul");
